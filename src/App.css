@@ -9,6 +9,15 @@
     height: 7vh;
     width: 3vw;
   }
+  p,
+  h4,
+  h5,
+  h2,
+  h1,
+  h6,
+  h3 {
+    font-size: large;
+  }
 }
 
 .bg-img {
@@ -16,5 +25,5 @@
 }
 .partner {
   width: 100px;
-  height: 100pxpx;
+  height: 100px;
 }

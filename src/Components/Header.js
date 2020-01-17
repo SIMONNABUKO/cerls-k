@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../logo-cerl.png';
+import Logo from '../logo-cerl.png';
 
 export default function Header() {
   return (
@@ -20,7 +20,7 @@ export default function Header() {
                 <span class='icon-bar'></span>
               </button>
               <div class='navbar-brand'>
-                <a href='index.html'>
+                <a href='/'>
                   <h1>
                     <span>
                       <img className='cerls-logo' src={Logo} alt='' />{' '}
@@ -35,18 +35,18 @@ export default function Header() {
               <div class='menu'>
                 <ul class='nav nav-tabs' role='tablist'>
                   <li role='presentation'>
-                    <a href='index.html' class='active'>
+                    <a href='/' class='active'>
                       Home
                     </a>
                   </li>
                   <li role='presentation'>
-                    <a href='about.html'>About Us</a>
+                    <a href='/aboutus'>About Us</a>
                   </li>
                   <li role='presentation'>
                     <a href='services.html'>Services</a>
                   </li>
                   <li role='presentation'>
-                    <a href='portfolio.html'>Portfolio</a>
+                    <a href='/gallery'>Recent Trainings</a>
                   </li>
                   <li role='presentation'>
                     <a href='blog.html'>Blog</a>

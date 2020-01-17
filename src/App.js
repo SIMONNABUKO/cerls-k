@@ -1,24 +1,19 @@
 import React from 'react';
-import Header from './Components/HomePage/Header';
-import Carousel from './Components/HomePage/Carousel';
-import Feature from './Components/HomePage/Feature';
-import About from './Components/HomePage/About';
-import Lates from './Components/HomePage/Lates';
-import Partner from './Components/HomePage/Partner';
-import Contact from './Components/HomePage/Contact';
-import Footer from './Components/HomePage/Footer';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import HomePage from './Components/HomePage/Index';
+import AboutPage from './Components/AboutPage/Index';
+import GalleryPage from './Components/GalleryPage/Index';
 import './App.css';
 
 const App = () => (
   <>
-    <Header />
-    <Carousel />
-    <Feature />
-    <About />
-    <Lates />
-    <Partner />
-    <Contact />
-    <Footer />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/aboutus' component={AboutPage} />
+        <Route path='/gallery' component={GalleryPage} />
+      </Switch>
+    </BrowserRouter>
   </>
 );
 

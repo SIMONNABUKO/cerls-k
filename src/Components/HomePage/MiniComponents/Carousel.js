@@ -11,14 +11,16 @@ function Carousel() {
                 <div class='col-sm-6'>
                   <div class='carousel-content'>
                     <h2 class='animation animated-item-1'>
-                      <span>CeRLS</span>
+                      <span>
+                        Fleet Operations and Road Safety Management Training
+                      </span>
                     </h2>
                     <p class='animation animated-item-2'>
                       Accusantium doloremque laudantium totam rem aperiam, eaque
                       ipsa...
                     </p>
                     <a class='btn-slide animation animated-item-3' href='#'>
-                      Read More
+                      Register for the Training
                     </a>
                   </div>
                 </div>
