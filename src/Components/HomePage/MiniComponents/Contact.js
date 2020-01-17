@@ -15,7 +15,7 @@ function Contact() {
                 <i class='fa fa-phone'></i>
               </div>
               <div class='media-body'>
-                <h2>Have a question or need a custom quote?</h2>
+                <h2>Have a question about CeRLS?</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut

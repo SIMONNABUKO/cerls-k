@@ -16,10 +16,13 @@ function Carousel() {
                       </span>
                     </h2>
                     <p class='animation animated-item-2'>
-                      Accusantium doloremque laudantium totam rem aperiam, eaque
-                      ipsa...
+                      Register for our next training, to reserve your seat, only
+                      a few changes remaining Click the button below to register
                     </p>
-                    <a class='btn-slide animation animated-item-3' href='#'>
+                    <a
+                      class='btn-slide animation animated-item-3'
+                      href='/training-form'
+                    >
                       Register for the Training
                     </a>
                   </div>

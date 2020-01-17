@@ -42,15 +42,100 @@ export default function Header() {
                   <li role='presentation'>
                     <a href='/aboutus'>About Us</a>
                   </li>
-                  <li role='presentation'>
-                    <a href='services.html'>Services</a>
+                  <li class='nav-item dropdown'>
+                    <a
+                      class='nav-link dropdown-toggle'
+                      href='#'
+                      id='navbarDropdown'
+                      role='button'
+                      data-toggle='dropdown'
+                      aria-haspopup='true'
+                      aria-expanded='false'
+                    >
+                      Services <span class='caret'></span>
+                    </a>
+                    <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='#'>
+                          Consultancy
+                        </a>
+                      </li>
+
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='#'>
+                          Recruitment
+                        </a>
+                      </li>
+
+                      <div class='dropdown-divider'></div>
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='#'>
+                          Training
+                        </a>
+                      </li>
+                    </ul>
                   </li>
+                  <li class='nav-item dropdown'>
+                    <a
+                      class='nav-link dropdown-toggle'
+                      href='#'
+                      id='navbarDropdown'
+                      role='button'
+                      data-toggle='dropdown'
+                      aria-haspopup='true'
+                      aria-expanded='false'
+                    >
+                      News <span class='caret'></span>
+                    </a>
+                    <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='#'>
+                          Forum
+                        </a>
+                      </li>
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='#'>
+                          Magazine
+                        </a>
+                      </li>
+                      <div class='dropdown-divider'></div>
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='#'>
+                          Updates
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class='nav-item dropdown'>
+                    <a
+                      class='nav-link dropdown-toggle'
+                      href='#'
+                      id='navbarDropdown'
+                      role='button'
+                      data-toggle='dropdown'
+                      aria-haspopup='true'
+                      aria-expanded='false'
+                    >
+                      Membership<span class='caret'></span>
+                    </a>
+                    <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='#'>
+                          Individual Membership
+                        </a>
+                      </li>
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='#'>
+                          Corporate Membership
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
                   <li role='presentation'>
                     <a href='/gallery'>Recent Trainings</a>
                   </li>
-                  <li role='presentation'>
-                    <a href='blog.html'>Blog</a>
-                  </li>
+
                   <li role='presentation'>
                     <a href='contact.html'>Contact</a>
                   </li>
