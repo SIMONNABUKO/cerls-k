@@ -69,7 +69,7 @@ export default function Header() {
 
                       <div class='dropdown-divider'></div>
                       <li role='presentation'>
-                        <a class='dropdown-item' href='#'>
+                        <a class='dropdown-item' href='courses'>
                           Training
                         </a>
                       </li>
@@ -137,7 +137,7 @@ export default function Header() {
                   </li>
 
                   <li role='presentation'>
-                    <a href='contact.html'>Contact</a>
+                    <a href='/contact-us'>Contact</a>
                   </li>
                 </ul>
               </div>

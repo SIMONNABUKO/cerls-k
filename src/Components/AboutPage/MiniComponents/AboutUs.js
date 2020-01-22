@@ -23,7 +23,11 @@ function AboutUs() {
             data-wow-duration='1000ms'
             data-wow-delay='300ms'
           >
-            <img src='images/7.jpg' class='img-responsive' />
+            <img
+              src='assets/images/cerls-trainings.png'
+              alt=''
+              class='img-responsive'
+            />
             <h4>A summary of what we do</h4>
             <p>
               CeRLS is a training and consulting institution that provides
@@ -40,6 +44,10 @@ function AboutUs() {
               enables our students to enhance their employability.
             </p>
             <h4>Our Vision</h4>
+            <p>
+              To provide quality learning experience to meet the increasing
+              demand through technology
+            </p>
             <h4>Our Mision</h4>
             <hr />
             <h3>Why Choose Us?</h3>
