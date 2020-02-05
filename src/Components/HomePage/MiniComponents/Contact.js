@@ -17,10 +17,16 @@ function Contact() {
               <div class='media-body'>
                 <h2>Have a question about CeRLS?</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud exercitation +0123 456 70
-                  80
+                  We are available from 8:00am - 5:30pm week days and on
+                  Saturday. Click the button below for more information on how
+                  to contact us
+                  <br />
+                  <a
+                    class='btn-slide btn btn-lg animation animated-item-3'
+                    href='/contact-us'
+                  >
+                    CeRLS Contact Information
+                  </a>
                 </p>
               </div>
             </div>

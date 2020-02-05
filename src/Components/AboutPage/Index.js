@@ -9,7 +9,7 @@ function Index() {
     <div>
       <Header />
       <AboutUs />
-      <Team />
+      {/* <Team /> */}
       <Footer />
     </div>
   );

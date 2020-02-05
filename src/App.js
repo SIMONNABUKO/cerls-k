@@ -156,6 +156,7 @@ export class App extends Component {
     });
   }
   componentDidMount() {
+    // let api = '';
     this.handleRetrieveMessages();
     this.handleRetrieveCourses();
   }

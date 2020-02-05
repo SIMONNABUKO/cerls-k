@@ -19,9 +19,17 @@ function Carousel() {
                         Training(upcoming-26th - 27th March 2020)
                       </span>
                     </h2>
-                    <p class='animation animated-item-2'>
+                    <p
+                      class='animation animated-item-2'
+                      style={{ fontSize: '20px' }}
+                    >
                       Register for our next training, to reserve your seat!{' '}
                       <br />
+                      <br />
+                      <h6>
+                        Training Cost
+                        <span class='badge badge-secondary'>KES 75,000</span>
+                      </h6>
                       <a
                         class='btn-slide btn btn-lg animation animated-item-3'
                         href='/training-form'
@@ -31,8 +39,9 @@ function Carousel() {
                       <h4>For inquiries:</h4>
                       <span>Phone:</span>
                       <br />
-                      +254 (0) 412242083/4 +254 (0) 725023175, +254 (0)
-                      733360330, +254(0)776849544
+                      +254 (0) 412242083/4, +254 (0) 792288661, +254(0)776849544{' '}
+                      <br />
+                      Email: training@cerls-k.co.ke
                     </p>
                   </div>
                 </div>

@@ -14,10 +14,7 @@ function Team() {
             >
               <img src='images/services/1.jpg' alt='' />
               <h4>Eric </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing eil sed
-                deiusmod tempor
-              </p>
+              <p>CeRLS team placeholder text</p>
             </div>
             <div
               class='col-md-3 wow fadeInDown'
@@ -26,10 +23,7 @@ function Team() {
             >
               <img src='images/services/2.jpg' alt='' />
               <h4>Charles </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing eil sed
-                deiusmod tempor
-              </p>
+              <p>CeRLS team placeholder text</p>
             </div>
             <div
               class='col-md-3 wow fadeInDown'
@@ -38,10 +32,7 @@ function Team() {
             >
               <img src='images/services/3.jpg' alt='' />
               <h4>Victor</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing eil sed
-                deiusmod tempor
-              </p>
+              <p>CeRLS team placeholder text</p>
             </div>
             <div
               class='col-md-3 wow fadeInDown'
@@ -50,10 +41,7 @@ function Team() {
             >
               <img src='images/services/3.jpg' alt='' />
               <h4>Godffrey </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing eil sed
-                deiusmod tempor
-              </p>
+              <p>CeRLS team placeholder text</p>
             </div>
           </div>
         </div>

@@ -12,7 +12,10 @@ function Lates() {
           data-wow-duration='1000ms'
           data-wow-delay='300ms'
         >
-          <img src='images/4.jpg' class='img-responsive' />
+          <img
+            src='https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+            class='img-responsive'
+          />
           <h3>Fleet Operations and Road Safety Management Training</h3>
           <p>
             <ul>
@@ -21,8 +24,19 @@ function Lates() {
               <li>Mantainance</li>
               <li>Utilization</li>
               <li>Road safety and in Fleet Operations</li>
-            </ul>
+              <br />
+              <h6>
+                Training Cost
+                <span class='badge badge-secondary'>KES 75,000</span>
+              </h6>
+            </ul>{' '}
           </p>
+          <a
+            class='btn-slide btn btn-lg animation animated-item-3'
+            href='/training-form'
+          >
+            Register
+          </a>
         </div>
 
         <div
@@ -30,7 +44,10 @@ function Lates() {
           data-wow-duration='1000ms'
           data-wow-delay='600ms'
         >
-          <img src='images/4.jpg' class='img-responsive' />
+          <img
+            src='https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+            class='img-responsive'
+          />
           <h3>Impact of Logistics in manufacturing Industry Training</h3>
           <p>
             <ul>
@@ -39,8 +56,19 @@ function Lates() {
               <li>Growing Materials Demand</li>
               <li>Complex Value Chains</li>
               <li>Sustainability</li>
+              <br />
+              <h6>
+                Training Cost
+                <span class='badge badge-secondary'>KES 75,000</span>
+              </h6>
             </ul>
           </p>
+          <a
+            class='btn-slide btn btn-lg animation animated-item-3'
+            href='/training-form'
+          >
+            Register
+          </a>
         </div>
 
         <div
@@ -48,7 +76,10 @@ function Lates() {
           data-wow-duration='1000ms'
           data-wow-delay='900ms'
         >
-          <img src='images/4.jpg' class='img-responsive' />
+          <img
+            src='https://images.unsplash.com/photo-1569062980724-23e1063d8790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+            class='img-responsive'
+          />
           <h3>Retail Logistics</h3>
           <p>
             <ul>
@@ -58,13 +89,23 @@ function Lates() {
               <li>Unleashing your portential with reverse logistics</li>
             </ul>
           </p>
+          <a
+            class='btn-slide btn btn-lg animation animated-item-3'
+            href='/training-form'
+          >
+            Register
+          </a>
         </div>
+        <div className='clearfix'></div>
         <div
           class='col-md-4 wow fadeInDown'
           data-wow-duration='1000ms'
           data-wow-delay='900ms'
         >
-          <img src='images/4.jpg' class='img-responsive' />
+          <img
+            src='https://images.unsplash.com/photo-1561464382-349a0d78a9b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+            class='img-responsive'
+          />
           <h3>
             Cost Reduction in Warehousing, Inventory, MNGT and Distribution
           </h3>
@@ -76,13 +117,23 @@ function Lates() {
               <li>Equipment handling</li>
             </ul>
           </p>
+          <a
+            class='btn-slide btn btn-lg animation animated-item-3'
+            href='/training-form'
+          >
+            Register
+          </a>
         </div>
+
         <div
           class='col-md-4 wow fadeInDown'
           data-wow-duration='1000ms'
           data-wow-delay='900ms'
         >
-          <img src='images/4.jpg' class='img-responsive' />
+          <img
+            src='https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+            class='img-responsive'
+          />
           <h3>Kenya Logistics Summit and Expo 2020</h3>
           <p>
             <ul>
@@ -92,6 +143,12 @@ function Lates() {
               <li>Logistics Management in Electronics</li>
             </ul>
           </p>
+          <a
+            class='btn-slide btn btn-lg animation animated-item-3'
+            href='/training-form'
+          >
+            Register
+          </a>
         </div>
       </div>
     </div>

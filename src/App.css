@@ -1,8 +1,11 @@
-
 @media only screen and (max-width: 768px) {
   .cerls-logo {
-    height: 6vh;
-    width: 11vw;
+    height: 35px;
+    width: 35px;
+  }
+  .lg {
+    display: none;
+    color: #ab0044;
   }
   form {
     max-width: 50vw;
@@ -11,8 +14,12 @@
 }
 @media only screen and (min-width: 769px) {
   .cerls-logo {
-    height: 7vh;
-    width: 3vw;
+    height: 50px;
+    width: 50px;
+  }
+  .sm {
+    display: none;
+    color: #ab0044;
   }
   p,
   h4,
@@ -32,10 +39,7 @@
 .bg-img {
   background-image: url(images/slider/cerls-m.png);
 }
-.partner {
-  width: 100px;
-  height: 100px;
-}
+
 .animated-item-2 {
 }
 .animated-item-1 {

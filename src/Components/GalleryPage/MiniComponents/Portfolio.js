@@ -17,10 +17,7 @@ function Portfolio() {
       <section id='portfolio'>
         <div class='container'>
           <div class='center'>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
-              eiusmod tempor incididunt
-            </p>
+            <p>CeRLS past events gallery</p>
           </div>
 
           <ul class='portfolio-filter text-center'>

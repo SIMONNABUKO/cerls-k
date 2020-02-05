@@ -21,7 +21,14 @@ export default function Header() {
               </button>
               <div class='navbar-brand'>
                 <a href='/'>
-                  <h1>
+                  <h1 className='lg'>
+                    <span>
+                      <img className='cerls-logo' src={Logo} alt='' />{' '}
+                    </span>
+                    Centre for Reverse Logistics and Supply Chain Studies(CeRLS)
+                  </h1>
+
+                  <h1 className='sm'>
                     <span>
                       <img className='cerls-logo' src={Logo} alt='' />{' '}
                     </span>
@@ -104,6 +111,11 @@ export default function Header() {
                           Updates
                         </a>
                       </li>
+                      <li role='presentation'>
+                        <a class='dropdown-item' href='/news'>
+                          Logistics news
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li class='nav-item dropdown'>
@@ -133,11 +145,20 @@ export default function Header() {
                   </li>
 
                   <li role='presentation'>
-                    <a href='/gallery'>Recent Trainings</a>
+                    <a href='/gallery'>Gallery</a>
                   </li>
 
                   <li role='presentation'>
                     <a href='/contact-us'>Contact</a>
+                  </li>
+                  <li role='presentation'>
+                    <a
+                      className='btn'
+                      style={{ color: '#ab0044' }}
+                      href='http://54.36.168.175:2096/'
+                    >
+                      Staff Mail
+                    </a>
                   </li>
                 </ul>
               </div>

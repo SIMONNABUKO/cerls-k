@@ -7,18 +7,19 @@ class TrainingForm extends React.Component {
   componentDidMount() {
     // add Conversational Form info
 
-    this.refs.name.setAttribute(
+    this.refs.firstName.setAttribute(
       'cf-questions',
-      'Can you let  us know your name?'
+      'Can you let  us know your first name?'
     );
     this.refs.email.setAttribute('cf-questions', 'Thank you! Your email?');
     this.refs.phone.setAttribute(
       'cf-questions',
       'Thank you! Your phone number?'
     );
+
     this.refs.description.setAttribute(
       'cf-questions',
-      'Tell us more about yourself'
+      'Your location? eg Nairobi-Kenya.'
     );
 
     this.cf = window.cf.ConversationalForm.startTheConversation({
@@ -28,17 +29,21 @@ class TrainingForm extends React.Component {
         success();
       },
       theme: 'purple',
+      showProgressBar: true,
 
       submitCallback: function() {
         // this callback could also be added to the React.createElement it self...
         // var formData = this.getFormData();
         var formDataSerialized = this.getFormData(true);
+        console.log(formDataSerialized);
         const traineeRef = firebase.database().ref('trainees');
         const trainee = {
-          traineeName: formDataSerialized['tag-0'],
-          traineeEmail: formDataSerialized['tag-1'],
-          traineePhone: formDataSerialized['tag-2'],
-          traineeDescription: formDataSerialized['tag-3']
+          traineeFirstName: formDataSerialized['tag-0'],
+          traineeLastName: formDataSerialized['tag-1'],
+          traineeEmail: formDataSerialized['tag-2'],
+          traineePhone: formDataSerialized['tag-3'],
+          trainingType: formDataSerialized['training'][0],
+          traineeDescription: formDataSerialized['tag-5']
         };
 
         traineeRef.push(trainee);
@@ -47,12 +52,13 @@ class TrainingForm extends React.Component {
         );
         this.addRobotChatResponse('You gave us the following details:');
         this.addRobotChatResponse(
-          `Name:  ${trainee.traineeName} <br/>
+          `Name:  ${trainee.traineeFirstName} ${trainee.traineeLastName} <br/>
           Email: ${trainee.traineeEmail} <br/>
           Phone: ${trainee.traineePhone} <br/>
-          More Information: ${trainee.traineeDescription} <br/>`
+          Training Applied For: ${trainee.trainingType}<br/>
+          Your Location: ${trainee.traineeDescription} <br/>`
         );
-        console.log(trainee.trainineePhone);
+        console.log(trainee);
       }
     });
   }
@@ -68,9 +74,16 @@ class TrainingForm extends React.Component {
 
       React.createElement('input', {
         type: 'text',
-        ref: 'name',
-        placeholder: 'Name (required)',
-        defaultValue: this.props.name
+        ref: 'firstName',
+        placeholder: 'First Name (required)',
+        defaultValue: this.props.firstName
+      }),
+      React.createElement('input', {
+        type: 'text',
+        ref: 'lastName',
+        'cf-questions': 'Please enter your last name',
+        placeholder: 'Last Name (required)',
+        defaultValue: this.props.lastName
       }),
       React.createElement('input', {
         type: 'email',
@@ -81,11 +94,79 @@ class TrainingForm extends React.Component {
       React.createElement('input', {
         type: 'text',
         ref: 'phone',
-        placeholder: 'Phone (required)',
         defaultValue: this.props.phone
       }),
+
+      React.createElement('input', {
+        type: 'radio',
+        ref: 'safety',
+        'cf-questions': 'Which training are you applying for?',
+        placeholder: 'Phone (required)',
+        defaultValue: this.props.safety,
+        name: 'training',
+        'cf-label': '26th - 27th March 2020',
+        'cf-image':
+          'https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        tabindex: '1',
+        value:
+          'Fleet Operations and Road Safety Management Training(26th - 27th March 2020)'
+      }),
+      React.createElement('input', {
+        type: 'radio',
+        ref: 'training',
+
+        'cf-image':
+          'https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        defaultValue: this.props.training,
+        'cf-label': '21th-22th May 2020',
+        name: 'training',
+        tabindex: '2',
+        value:
+          'Impact of Logistics in manufacturing Industry Training(21th-22th May 2020) '
+      }),
+
+      React.createElement('input', {
+        type: 'radio',
+        ref: 'retail',
+        placeholder: 'Phone (required)',
+        defaultValue: this.props.retail,
+        name: 'training',
+        'cf-label': '24 July 2020',
+        'cf-image':
+          'https://images.unsplash.com/photo-1569062980724-23e1063d8790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        tabindex: '1',
+        value: 'Retail Logistics(24 July 2020)'
+      }),
+
+      React.createElement('input', {
+        type: 'radio',
+        ref: 'cost',
+        placeholder: 'Phone (required)',
+        defaultValue: this.props.cost,
+        name: 'training',
+        'cf-label': '24th - 25th Sep 2020',
+        'cf-image':
+          'https://images.unsplash.com/photo-1561464382-349a0d78a9b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        tabindex: '1',
+        value:
+          'Cost Reduction in Warehousing, Inventory, MNGT and Distribution(24th - 25th Sep 2020)'
+      }),
+
+      React.createElement('input', {
+        type: 'radio',
+        ref: 'summit',
+        placeholder: 'Phone (required)',
+        defaultValue: this.props.summit,
+        name: 'training',
+        'cf-label': 'Summit and Expo 2020',
+        'cf-image':
+          'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        tabindex: '1',
+        value: 'Kenya Logistics Summit and Expo 2020'
+      }),
+
       React.createElement('textarea', {
-        placeholder: 'Tell us more about yourself',
+        placeholder: 'Your location? eg Nairobi-Kenya.',
         ref: 'description',
         defaultValue: this.props.description
       }),

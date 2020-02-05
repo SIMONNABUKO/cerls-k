@@ -46,9 +46,14 @@ function AboutUs() {
             <h4>Our Vision</h4>
             <p>
               To provide quality learning experience to meet the increasing
-              demand through technology
+              demand through technology and research.
             </p>
             <h4>Our Mision</h4>
+            <p>
+              Redefining logistics training and become the premier center of
+              education, workforce training, partnership and economic
+              development.
+            </p>
             <hr />
             <h3>Why Choose Us?</h3>
             <h5>Placement Assistance</h5>
