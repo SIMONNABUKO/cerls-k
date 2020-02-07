@@ -7,7 +7,11 @@ export class Index extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header
+          login={this.props.login}
+          state={this.props.state}
+          logout={this.props.logout}
+        />
         <Portfolio />
         <Footer />
       </div>

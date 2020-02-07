@@ -10,6 +10,7 @@ import ContactPage from './Components/ContactPage/Index';
 import DashboardPage from './Components/DashboardPage/Index';
 import CoursesPage from './Components/CoursesPage/Index';
 import Add from './Components/CoursesPage/Add';
+import FirebaseUI from './Components/FirebaseUI/Index';
 
 // import ConversationalForm from './Components/ConversationalForm/Index';
 import './App.css';
@@ -38,7 +39,9 @@ export class App extends Component {
       traineeEmail: '',
       trainineePhone: '',
       traineeDescription: '',
-      trainees: []
+      trainees: [],
+      isSignedIn: false,
+      user: null
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -46,6 +49,27 @@ export class App extends Component {
     this.handleRetrieveMessages = this.handleRetrieveMessages.bind(this);
     this.getTrainingFormData = this.getTrainingFormData.bind(this);
     this.handleTraineeForm = this.handleTraineeForm.bind(this);
+    this.login = this.login.bind(this);
+    this.logout = this.logout.bind(this);
+  }
+
+  login(e) {
+    e.preventDefault();
+    auth.signInWithPopup(provider).then(result => {
+      const user = result.user;
+      console.log(user);
+      this.setState({
+        user
+      });
+    });
+  }
+  logout(e) {
+    e.preventDefault();
+    auth.signOut().then(() => {
+      this.setState({
+        user: null
+      });
+    });
   }
 
   handleChange(e) {
@@ -159,16 +183,51 @@ export class App extends Component {
     // let api = '';
     this.handleRetrieveMessages();
     this.handleRetrieveCourses();
+    this.unregisterAuthObserver = firebase
+      .auth()
+      .onAuthStateChanged(user =>
+        this.setState({ isSignedIn: !!user, user: user })
+      );
   }
   render() {
     return (
       <>
         <BrowserRouter>
           <Switch>
-            <Route exact path='/' component={HomePage} />
-            <Route path='/aboutus' component={AboutPage} />
-            <Route path='/gallery' component={GalleryPage} />
-
+            <Route
+              exact
+              path='/'
+              render={props => (
+                <HomePage
+                  {...props}
+                  state={this.state}
+                  login={this.login}
+                  logout={this.logout}
+                />
+              )}
+            />
+            <Route
+              path='/aboutus'
+              render={props => (
+                <AboutPage
+                  {...props}
+                  state={this.state}
+                  login={this.login}
+                  logout={this.logout}
+                />
+              )}
+            />
+            <Route
+              path='/gallery'
+              render={props => (
+                <GalleryPage
+                  {...props}
+                  state={this.state}
+                  login={this.login}
+                  logout={this.logout}
+                />
+              )}
+            />
             <Route
               path='/training-form'
               render={props => (
@@ -189,6 +248,8 @@ export class App extends Component {
                   handleChange={this.handleChange}
                   state={this.state}
                   handleSubmit={this.handleSubmit}
+                  login={this.login}
+                  logout={this.logout}
                 />
               )}
             />
@@ -200,6 +261,21 @@ export class App extends Component {
                   {...props}
                   handleChange={this.handleChange}
                   state={this.state}
+                  login={this.login}
+                  logout={this.logout}
+                />
+              )}
+            />
+            <Route
+              path='/signin'
+              render={props => (
+                <FirebaseUI
+                  {...props}
+                  handleChange={this.handleChange}
+                  state={this.state}
+                  login={this.login}
+                  logout={this.logout}
+                  uiConfig={this.uiConfig}
                 />
               )}
             />

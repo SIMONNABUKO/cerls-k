@@ -7,11 +7,18 @@
 
 /* ==== Google font ==== */
 @import url(
-  https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600
+  https://fonts.googleapis.com/css?family=Open+Sans:400,
+  300,
+  700,
+  600
 );
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
 @import url('animate.css');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Open Sans', Arial, sans-serif;
@@ -25,7 +32,6 @@ body {
   background-image: url(assets/images/slider/cerls-m.png);
   background-repeat: no-repeat;
   object-fit: cover;
-
 }
 
 body {
@@ -122,7 +128,7 @@ a:hover {
   float: left;
   font-size: 25px;
   color: #ab0044;
-  
+
   font-weight: 900;
 }
 .navbar-brand h1 span {
@@ -131,9 +137,9 @@ a:hover {
 
 .menu {
   font-size: 12px;
-  float: right;
   text-transform: uppercase;
   font-weight: 700;
+  padding-top: 70px;
 }
 
 .menu ul.nav-tabs li {
@@ -150,8 +156,7 @@ a:hover {
 .nav-tabs > li > a {
   border-radius: 0;
   color: #333;
-  padding: 30px;-
-  +
+  padding: 15px;
 }
 
 .nav-tabs > li > a:hover {
@@ -221,7 +226,7 @@ a:hover {
 }
 
 #main-slider .carousel .carousel-content {
-  margin-top:100px;
+  margin-top: 100px;
 }
 
 #main-slider .carousel .slide-margin {
@@ -247,7 +252,7 @@ a:hover {
   color: #000;
   font-size: 25px;
 }
-.btn-slide{
+.btn-slide {
   padding: 8px 20px;
   background: #ab0044;
   color: #fff;
@@ -410,7 +415,7 @@ a:hover {
 
 .partners ul li {
   display: inline-block;
-  
+
   width: 150px;
 }
 
