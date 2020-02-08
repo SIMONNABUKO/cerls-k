@@ -16,7 +16,7 @@ function AboutUs() {
 
       <div class='aboutus'>
         <div class='container'>
-          <h3>About CeRLS</h3>
+          <h3 style={{ color: '#fff' }}>About CeRLS</h3>
           <hr />
           <div
             class='col-md-7 wow fadeInDown'
@@ -28,8 +28,8 @@ function AboutUs() {
               alt=''
               class='img-responsive'
             />
-            <h4>A summary of what we do</h4>
-            <p>
+            <h4 style={{ color: '#fff' }}>A summary of what we do</h4>
+            <p style={{ color: '#fff' }}>
               CeRLS is a training and consulting institution that provides
               professional training to individuals and organizations who are
               mainly interested in pursuing a career within the field of
@@ -37,27 +37,27 @@ function AboutUs() {
               institute prides itself in the practical methodology and skill
               training curriculum.{' '}
             </p>
-            <p>
+            <p style={{ color: '#fff' }}>
               We offer high quality and inexpensive, self-paced Professional
               Certification in Logistics and Transport; Humanitarian, Health and
               Emergency Logistics; and Reverse Logistics Management which
               enables our students to enhance their employability.
             </p>
-            <h4>Our Vision</h4>
-            <p>
+            <h4 style={{ color: '#fff' }}>Our Vision</h4>
+            <p style={{ color: '#fff' }}>
               To provide quality learning experience to meet the increasing
               demand through technology and research.
             </p>
-            <h4>Our Mision</h4>
-            <p>
+            <h4 style={{ color: '#fff' }}>Our Mision</h4>
+            <p style={{ color: '#fff' }}>
               Redefining logistics training and become the premier center of
               education, workforce training, partnership and economic
               development.
             </p>
             <hr />
-            <h3>Why Choose Us?</h3>
-            <h5>Placement Assistance</h5>
-            <p>
+            <h3 style={{ color: '#fff' }}>Why Choose Us?</h3>
+            <h5 style={{ color: '#fff' }}>Placement Assistance</h5>
+            <p style={{ color: '#fff' }}>
               Through our placement assistance department we help students and
               graduates in realising their career objectives. CeRLS-K is a sure
               link between college experience and probable employment prospects
@@ -70,16 +70,16 @@ function AboutUs() {
               job-related needs. We also conduct job-searching workshops, career
               fairs on campus, and one-to-one career guidance.
             </p>
-            <h5>Staffing Solutions</h5>
-            <p>
+            <h5 style={{ color: '#fff' }}>Staffing Solutions</h5>
+            <p style={{ color: '#fff' }}>
               We understand the uniqueness of your business and your urge for
               more. That’s why we offer you the right candidates, those who have
               been equipped with right skills, attitude and the passion for
               excellence. You need an intern, Mid-level to senior executive,
               just contact us today. No cost, No charge.
             </p>
-            <h5>Online Learning</h5>
-            <p>
+            <h5 style={{ color: '#fff' }}>Online Learning</h5>
+            <p style={{ color: '#fff' }}>
               To those who can’t attend classes, probably due to reasons you
               cherish, we recognize your reason. CeRLS-K is providing you a
               myriad of options from weekend classes to distance learning with

@@ -5,7 +5,7 @@ function Lates() {
     <div class='lates'>
       <div class='container'>
         <div class='text-center'>
-          <h2>Upcoming Events</h2>
+          <h2 style={{ color: '#fff' }}>Upcoming Events</h2>
         </div>
         <div
           class='col-md-4 wow fadeInDown'
@@ -16,16 +16,18 @@ function Lates() {
             src='https://images.unsplash.com/photo-1552879890-3a06dd3a06c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
             class='img-responsive'
           />
-          <h3>Fleet Operations and Road Safety Management Training</h3>
+          <h3 style={{ color: '#fff' }}>
+            Fleet Operations and Road Safety Management Training
+          </h3>
           <p>
-            <ul>
+            <ul style={{ color: '#fff' }}>
               <li>Vehicle Selection</li>
               <li>Monitoring</li>
               <li>Mantainance</li>
               <li>Utilization</li>
               <li>Road safety and in Fleet Operations</li>
               <br />
-              <h6>
+              <h6 style={{ color: '#fff' }}>
                 Training Cost
                 <span class='badge badge-secondary'>KES 75,000</span>
               </h6>
@@ -48,8 +50,10 @@ function Lates() {
             src='https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
             class='img-responsive'
           />
-          <h3>Impact of Logistics in manufacturing Industry Training</h3>
-          <p>
+          <h3 style={{ color: '#fff' }}>
+            Impact of Logistics in manufacturing Industry Training
+          </h3>
+          <p style={{ color: '#fff' }}>
             <ul>
               <li>Friction of Distribution</li>
               <li>Spacial division of production and consumption</li>
@@ -57,7 +61,7 @@ function Lates() {
               <li>Complex Value Chains</li>
               <li>Sustainability</li>
               <br />
-              <h6>
+              <h6 style={{ color: '#fff' }}>
                 Training Cost
                 <span class='badge badge-secondary'>KES 75,000</span>
               </h6>
@@ -80,8 +84,8 @@ function Lates() {
             src='https://images.unsplash.com/photo-1569062980724-23e1063d8790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
             class='img-responsive'
           />
-          <h3>Retail Logistics</h3>
-          <p>
+          <h3 style={{ color: '#fff' }}>Retail Logistics</h3>
+          <p style={{ color: '#fff' }}>
             <ul>
               <li>Responsinse to Competitive Pressure</li>
               <li>Responsinse to Changing Customer Demand</li>
@@ -106,10 +110,10 @@ function Lates() {
             src='https://images.unsplash.com/photo-1561464382-349a0d78a9b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
             class='img-responsive'
           />
-          <h3>
+          <h3 style={{ color: '#fff' }}>
             Cost Reduction in Warehousing, Inventory, MNGT and Distribution
           </h3>
-          <p>
+          <p style={{ color: '#fff' }}>
             <ul>
               <li>Warehouse benchmarking</li>
               <li>Technology Trends</li>
@@ -134,8 +138,10 @@ function Lates() {
             src='https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
             class='img-responsive'
           />
-          <h3>Kenya Logistics Summit and Expo 2020</h3>
-          <p>
+          <h3 style={{ color: '#fff' }}>
+            Kenya Logistics Summit and Expo 2020
+          </h3>
+          <p style={{ color: '#fff' }}>
             <ul>
               <li>Intergration between main ports and dry ports</li>
               <li>Managing Pharmaceutical Logistics</li>

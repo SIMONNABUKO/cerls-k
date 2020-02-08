@@ -16,14 +16,14 @@ function Courses(props) {
 
       <div class='services'>
         <div class='container'>
-          <h3>CeRLS Courses</h3>
+          <h3 style={{ color: '#fff' }}>CeRLS Courses</h3>
           <hr />
 
           {props.state.courses.map(course => {
             return (
               <>
                 <div key={course.id} class='col-md-6 col-md-offset-3'>
-                  <h3 style={{ color: '#330080' }} class='media-heading'>
+                  <h3 style={{ color: '#fff' }} class='media-heading'>
                     {course.title}
                   </h3>
                   <img
@@ -31,8 +31,11 @@ function Courses(props) {
                     alt=''
                     class='img-responsive'
                   />
-                  <p>{course.description}</p>
-                  <h4 className='btn btn-lg' style={{ color: '#a01b1b' }}>
+                  <p style={{ color: '#fff' }}>{course.description}</p>
+                  <h4
+                    className='btn btn-lg'
+                    style={{ color: '#a01b1b', backgroundColor: '#fff' }}
+                  >
                     Kshs.{course.fees}/=
                   </h4>
                   <hr />

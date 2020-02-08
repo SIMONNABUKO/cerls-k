@@ -295,7 +295,14 @@ export class App extends Component {
             <Route
               path='/dashboard'
               render={props => (
-                <DashboardPage {...props} isAuthed={true} name='Simon' />
+                <DashboardPage
+                  {...props}
+                  isAuthed={true}
+                  name='Simon'
+                  state={this.state}
+                  logout={this.logout}
+                  login={this.login}
+                />
               )}
             />
           </Switch>

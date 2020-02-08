@@ -12,8 +12,8 @@ function Feature() {
               data-wow-delay='300ms'
             >
               <i class='fa fa-book'></i>
-              <h2>CeRLS Courses</h2>
-              <p>
+              <h2 style={{ color: '#ab0044' }}>CeRLS Courses</h2>
+              <p style={{ color: '#fff' }}>
                 We offer proffessional training in various facets of logistics.
                 For more information about our courses, click on the button
                 below
@@ -34,8 +34,8 @@ function Feature() {
               data-wow-delay='600ms'
             >
               <i class='fa fa-laptop'></i>
-              <h2>About CeRLS</h2>
-              <p>
+              <h2 style={{ color: '#ab0044' }}>About CeRLS</h2>
+              <p style={{ color: '#fff' }}>
                 So you want to know more about our services, vission, mission
                 and core values? Click the button bellow to navigate to about us
                 section
@@ -57,7 +57,7 @@ function Feature() {
             >
               <i class='fa fa-heart-o'></i>
               <h2>CeRLS Gallery</h2>
-              <p>
+              <p style={{ color: '#fff' }}>
                 Want to know more about how our trainings are conducted? In our
                 gallery/ CeRLS Trainins Section, we display photos of our past
                 events
@@ -79,7 +79,7 @@ function Feature() {
             >
               <i class='fa fa-users'></i>
               <h2>CeRLS Forum</h2>
-              <p>
+              <p style={{ color: '#fff' }}>
                 We provide a forum from where our students, alumni and the
                 community interested in logistics share information about
                 Logistics and engage in fruitful discussions

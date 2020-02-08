@@ -6,11 +6,7 @@ function Partner() {
       <div class='container'>
         <div class='center wow fadeInDown'>
           <h2>Our Partners</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut <br /> et dolore magna aliqua. Ut enim
-            ad minim veniam
-          </p>
+          <p>Some of our trusted clients:</p>
         </div>
 
         <div class='partners'>
