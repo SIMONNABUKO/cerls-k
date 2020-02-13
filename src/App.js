@@ -91,7 +91,7 @@ export class App extends Component {
         });
       });
       this.setState({
-        user: ls.get('users')
+        user: [ls.get('users')]
       });
     });
   }
