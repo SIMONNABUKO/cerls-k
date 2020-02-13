@@ -41,7 +41,8 @@ export class App extends Component {
       traineeDescription: '',
       trainees: [],
       isSignedIn: false,
-      user: null
+      user: null,
+      users: []
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -57,9 +58,40 @@ export class App extends Component {
     e.preventDefault();
     auth.signInWithPopup(provider).then(result => {
       const user = result.user;
-      console.log(user);
+      const filteredUser = {
+        name: user.displayName,
+        email: user.email,
+        image: user.photoURL,
+        isVerified: user.emailVerified,
+        phone: user.phoneNumber
+      };
+      console.log(filteredUser);
+      const usersRef = firebase.database().ref('users');
+      // usersRef.push(filteredUser);
+      usersRef.on('value', snapshot => {
+        let users = snapshot.val();
+        let usersFromDB = [];
+        for (let user in users) {
+          usersFromDB.push({
+            id: user,
+            name: users[user].name,
+            email: users[user].email,
+            phone: users[user].phone,
+            image: users[user].image,
+            isVerified: users.isVerified
+          });
+          ls.set('users', usersFromDB);
+
+          console.log(usersFromDB);
+          console.log(usersFromDB['email']);
+          console.log(filteredUser['email']);
+        }
+        this.setState({
+          users: usersFromDB
+        });
+      });
       this.setState({
-        user
+        user: ls.get('users')
       });
     });
   }
@@ -183,11 +215,16 @@ export class App extends Component {
     // let api = '';
     this.handleRetrieveMessages();
     this.handleRetrieveCourses();
-    this.unregisterAuthObserver = firebase
-      .auth()
-      .onAuthStateChanged(user =>
-        this.setState({ isSignedIn: !!user, user: user })
-      );
+    this.unregisterAuthObserver = firebase.auth().onAuthStateChanged(user => {
+      const filteredUser = {
+        name: user.displayName,
+        email: user.email,
+        image: user.photoURL,
+        isVerified: user.emailVerified,
+        phone: user.phoneNumber
+      };
+      this.setState({ isSignedIn: !!user, user: filteredUser });
+    });
   }
   render() {
     return (
