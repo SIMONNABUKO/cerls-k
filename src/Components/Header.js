@@ -159,6 +159,19 @@ export default function Header(props) {
                         Staff Mail
                       </a>
                     </li>
+                    {props.state.user ? (
+                      <li role='presentation'>
+                        <a
+                          className='btn '
+                          style={{ color: '#330080' }}
+                          href='/dashboard'
+                        >
+                          Dashboard
+                        </a>
+                      </li>
+                    ) : (
+                      ''
+                    )}
                   </ul>
                 </div>
               </div>

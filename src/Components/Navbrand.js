@@ -20,7 +20,7 @@ function Navbrand(props) {
                     className='cerls-logo lg img img-circle'
                     height='30'
                     width='30'
-                    src={props.state.user.photoURL}
+                    src={props.state.currentUser.image}
                     alt=''
                   />{' '}
                 </span>

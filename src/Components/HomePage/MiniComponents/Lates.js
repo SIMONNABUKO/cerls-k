@@ -139,14 +139,14 @@ function Lates() {
             class='img-responsive'
           />
           <h3 style={{ color: '#fff' }}>
-            Kenya Logistics Summit and Expo 2020
+            Kenya Logistics Summit and Expo 2020(11th, 12th, 13th November 2020)
           </h3>
           <p style={{ color: '#fff' }}>
             <ul>
               <li>Intergration between main ports and dry ports</li>
               <li>Managing Pharmaceutical Logistics</li>
               <li>Logistics Benchmarking</li>
-              <li>Logistics Management in Electronics</li>
+              <li>Logistics Management in Elections</li>
             </ul>
           </p>
           <a

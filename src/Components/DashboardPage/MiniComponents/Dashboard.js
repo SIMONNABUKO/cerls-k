@@ -50,15 +50,15 @@ function Dashboard(props) {
                 <div class='row'>
                   <div class='col-md-6'>
                     <h6 style={{ color: '#ab0044' }}>Name</h6>
-                    <p>Simon Nabuko Angatia</p>
+                    <p>{props.state.currentUser.name}</p>
                     <h6 style={{ color: '#ab0044' }}>Phone</h6>
-                    <p>+254 705052213</p>
+                    <p>{props.state.currentUser.phone}</p>
                     <h6 style={{ color: '#ab0044' }}>Country</h6>
                     <p>Kenya</p>
                     <h6 style={{ color: '#ab0044' }}>Email</h6>
-                    <p>simonnabuko@gmail.com</p>
+                    <p>{props.state.currentUser.email}</p>
                   </div>
-                  <div class='col-md-6'>
+                  {/* <div class='col-md-6'>
                     <h6>Recent badges</h6>
                     <br />
                     <a href='#' class='badge badge-dark badge-pill'>
@@ -95,7 +95,7 @@ function Dashboard(props) {
                     <span class='badge badge-danger'>
                       <i class='fa fa-eye'></i> 245 Views
                     </span>
-                  </div>
+                  </div> */}
                   <div class='col-md-12'>
                     <h5 class='mt-2'>
                       <span class='fa fa-clock-o ion-clock float-right'></span>{' '}
@@ -140,10 +140,9 @@ function Dashboard(props) {
                   <a class='panel-close close' data-dismiss='alert'>
                     ×
                   </a>{' '}
-                  This is an <strong>.alert</strong>. Use this to show important
-                  messages to the user.
+                  You have no message for now
                 </div>
-                <table
+                {/* <table
                   class='table table-hover table-striped'
                   style={{ color: '#000' }}
                 >
@@ -187,7 +186,7 @@ function Dashboard(props) {
                       </td>
                     </tr>
                   </tbody>
-                </table>
+                </table> */}
               </div>
               <div class='tab-pane' id='edit'>
                 <form role='form'>
@@ -204,7 +203,7 @@ function Dashboard(props) {
                       Last name
                     </label>
                     <div class='col-lg-9'>
-                      <input class='form-control' type='text' value='Bishop' />
+                      <input class='form-control' type='text' value='' />
                     </div>
                   </div>
                   <div class='form-group row'>
@@ -282,10 +281,7 @@ function Dashboard(props) {
                         <option value='Mountain Time (US &amp; Canada)'>
                           (GMT-07:00) Mountain Time (US &amp; Canada)
                         </option>
-                        <option
-                          value='Central Time (US &amp; Canada)'
-                          selected='selected'
-                        >
+                        <option value='Nairobi-Kenya' selected='selected'>
                           (GMT-06:00) Central Time (US &amp; Canada)
                         </option>
                         <option value='Eastern Time (US &amp; Canada)'>
@@ -305,7 +301,7 @@ function Dashboard(props) {
                       <input
                         class='form-control'
                         type='text'
-                        value='janeuser'
+                        value='CeRLS User'
                       />
                     </div>
                   </div>
@@ -354,9 +350,11 @@ function Dashboard(props) {
           </div>
           <div class='col-lg-4 order-lg-1 text-center'>
             <img
-              src='//placehold.it/150'
+              src={props.state.currentUser.image}
               class='mx-auto img-fluid img-circle d-block'
               alt='avatar'
+              width='250'
+              height='250'
             />
             <h6 class='mt-2'>Upload a different photo</h6>
             <label class='custom-file'>

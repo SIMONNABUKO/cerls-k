@@ -14,6 +14,7 @@ import FirebaseUI from './Components/FirebaseUI/Index';
 
 // import ConversationalForm from './Components/ConversationalForm/Index';
 import './App.css';
+import localStorage from 'local-storage';
 
 // const itemRef = firebase.database.ref('userDetails');
 
@@ -42,6 +43,7 @@ export class App extends Component {
       trainees: [],
       isSignedIn: false,
       user: null,
+      currentUser: [],
       users: []
     };
     this.handleChange = this.handleChange.bind(this);
@@ -65,34 +67,7 @@ export class App extends Component {
         isVerified: user.emailVerified,
         phone: user.phoneNumber
       };
-      console.log(filteredUser);
-      const usersRef = firebase.database().ref('users');
-      // usersRef.push(filteredUser);
-      usersRef.on('value', snapshot => {
-        let users = snapshot.val();
-        let usersFromDB = [];
-        for (let user in users) {
-          usersFromDB.push({
-            id: user,
-            name: users[user].name,
-            email: users[user].email,
-            phone: users[user].phone,
-            image: users[user].image,
-            isVerified: users.isVerified
-          });
-          ls.set('users', usersFromDB);
-
-          console.log(usersFromDB);
-          console.log(usersFromDB['email']);
-          console.log(filteredUser['email']);
-        }
-        this.setState({
-          users: usersFromDB
-        });
-      });
-      this.setState({
-        user: [ls.get('users')]
-      });
+      ls.set('users', filteredUser);
     });
   }
   logout(e) {
@@ -223,7 +198,11 @@ export class App extends Component {
         isVerified: user.emailVerified,
         phone: user.phoneNumber
       };
-      this.setState({ isSignedIn: !!user, user: filteredUser });
+      this.setState({
+        isSignedIn: !!user,
+        user: filteredUser,
+        currentUser: filteredUser
+      });
     });
   }
   render() {
